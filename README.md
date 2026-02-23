@@ -1,5 +1,4 @@
 # CodeZen Test
-# CodeZen Test
 
 Ce repository contient un projet test pour **CodeZen**, mon side business de **templates de sites web préfaits** destinés à être personnalisés et vendus à des clients.
 
@@ -28,6 +27,8 @@ codezen-test/
 ├── index.html         # Page principale du template
 ├── README.md          # Description et informations du projet
 └── .git/              # Répertoire Git pour le suivi des versions
+├── style.css          # Page de style du template
+└── script.js          # logique js du template
 
 ## 🖼️ Aperçu du template
 
