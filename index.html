@@ -1,0 +1,561 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>Restaurant Dakar – Cuisine Sénégalaise Gastronomique | Mermoz-Sacré-Cœur</title>
+  <meta name="description" content="Restaurant Dakar, l'adresse gastronomique sénégalaise de référence à Mermoz-Sacré-Cœur. Réservez via WhatsApp. Cuisine raffinée, ambiance premium, 100% Halal."/>
+  <link rel="canonical" href="https://restaurant-dakar.sn/"/>
+  <meta property="og:type" content="restaurant"/>
+  <meta property="og:title" content="Restaurant Dakar – Cuisine Sénégalaise Gastronomique"/>
+  <meta property="og:description" content="L'adresse gastronomique sénégalaise de référence à Mermoz-Sacré-Cœur. Cuisine raffinée, ambiance premium, 100% Halal."/>
+  <meta property="og:url" content="https://restaurant-dakar.sn/"/>
+  <meta property="og:image" content="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80"/>
+  <meta property="og:locale" content="fr_SN"/>
+  <meta property="og:site_name" content="Restaurant Dakar"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Restaurant Dakar – Cuisine Sénégalaise Gastronomique"/>
+  <meta name="twitter:description" content="L'adresse gastronomique sénégalaise de référence à Mermoz-Sacré-Cœur."/>
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Restaurant","name":"Restaurant Dakar","description":"Restaurant gastronomique sénégalais à Mermoz-Sacré-Cœur, Dakar. Cuisine raffinée, ambiance chic, 100% Halal.","url":"https://restaurant-dakar.sn","telephone":"+221774617031","servesCuisine":["Sénégalaise","Africaine","Halal"],"priceRange":"CFA 3000–15000","hasMenu":"https://restaurant-dakar.sn/#menu","acceptsReservations":true,"address":{"@type":"PostalAddress","streetAddress":"Mermoz-Sacré-Cœur","addressLocality":"Dakar","addressCountry":"SN"},"geo":{"@type":"GeoCoordinates","latitude":14.7208,"longitude":-17.4683},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"11:00","closes":"23:00"}],"image":"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80"}
+  </script>
+  <style>
+    :root{
+      --noir:#0A0806;--noir-chaud:#141010;
+      --bordeaux:#800020;--bordeaux2:#6B001A;
+      --or:#C9A84C;--or-pale:#E8D5A3;
+      --creme:#F7F2E8;--creme2:#EDE8DA;
+      --sable:#D4C9A8;--gris:#7A7060;
+      --blanc:#FDFAF5;
+      --f1:'Cormorant Garamond',Georgia,serif;
+      --f2:'DM Sans',system-ui,sans-serif;
+      --ease:cubic-bezier(0.16,1,0.3,1);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+    body{font-family:var(--f2);background:var(--creme);color:var(--noir);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+    img{display:block;max-width:100%;height:auto;}
+    a{color:inherit;text-decoration:none;}
+    ul,ol{list-style:none;}
+    address{font-style:normal;}
+
+    /* GRAIN */
+    body::before{content:'';position:fixed;inset:0;z-index:999;pointer-events:none;opacity:.028;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size:200px;}
+
+    /* UTILS */
+    .wrap{width:100%;max-width:1280px;margin:0 auto;padding:0 1.25rem;}
+    .label{display:inline-block;font-family:var(--f2);font-size:.65rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--or);}
+
+    /* BOUTONS */
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:52px;padding:0 1.75rem;border-radius:2px;font-family:var(--f2);font-size:.85rem;font-weight:500;letter-spacing:.06em;cursor:pointer;border:none;transition:all .3s var(--ease);}
+    .btn:focus-visible{outline:2px solid var(--or);outline-offset:4px;}
+    .btn-wa{background:var(--noir);color:var(--or-pale);border:1px solid var(--or);}
+    .btn-wa:hover{background:var(--or);color:var(--noir);transform:translateY(-2px);box-shadow:0 8px 28px rgba(201,168,76,.25);}
+    .btn-ghost{background:transparent;color:var(--creme);border:1px solid rgba(247,242,232,.35);}
+    .btn-ghost:hover{border-color:var(--or);color:var(--or);}
+    .btn-dark{background:var(--bordeaux);color:var(--or-pale);border:1px solid transparent;}
+    .btn-dark:hover{background:var(--bordeaux2);transform:translateY(-2px);box-shadow:0 8px 28px rgba(128,0,32,.3);}
+
+    /* HEADER */
+    .header{position:fixed;top:0;left:0;right:0;z-index:500;transition:background .4s ease,box-shadow .4s ease;}
+    .header.scrolled{background:rgba(10,8,6,.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 1px 0 rgba(201,168,76,.15);}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;height:68px;padding:0 1.25rem;max-width:1280px;margin:0 auto;}
+    .logo-mark{display:flex;flex-direction:column;line-height:1;}
+    .logo-r{font-family:var(--f1);font-size:1.05rem;font-weight:300;color:var(--blanc);letter-spacing:.12em;text-transform:uppercase;}
+    .logo-d{font-family:var(--f1);font-size:1.45rem;font-weight:700;color:var(--or);letter-spacing:.04em;font-style:italic;margin-top:-4px;}
+    .nav-links{display:none;align-items:center;gap:2.5rem;}
+    .nav-links a{font-size:.78rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:rgba(253,250,245,.65);transition:color .2s;}
+    .nav-links a:hover{color:var(--or);}
+
+    /* HERO */
+    .hero{position:relative;height:100svh;height:100vh;min-height:620px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;}
+    .hero-media{position:absolute;inset:0;}
+    .hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 30%;animation:zoomOut 8s var(--ease) both;}
+    @keyframes zoomOut{from{transform:scale(1.1);}to{transform:scale(1.0);}}
+    .hero-veil{position:absolute;inset:0;background:linear-gradient(to right,rgba(10,8,6,.92) 0%,rgba(10,8,6,.5) 60%,rgba(10,8,6,.1) 100%),linear-gradient(to top,rgba(10,8,6,.7) 0%,transparent 60%);}
+    .hero-body{position:relative;z-index:1;padding:0 1.25rem 5rem;max-width:1280px;margin:0 auto;width:100%;}
+    .hero-tag{display:flex;align-items:center;gap:.75rem;margin-bottom:1.5rem;animation:fadeSlide .9s .2s var(--ease) both;}
+    .hero-tag::before{content:'';width:32px;height:1px;background:var(--or);}
+    .hero-num{font-family:var(--f1);font-size:.75rem;color:var(--or);letter-spacing:.2em;text-transform:uppercase;}
+    .hero-h1{font-family:var(--f1);font-size:clamp(3rem,11vw,7.5rem);font-weight:300;line-height:.92;color:var(--blanc);letter-spacing:-.01em;margin-bottom:1.75rem;animation:fadeSlide .9s .35s var(--ease) both;}
+    .hero-h1 em{font-style:italic;color:var(--or);font-weight:600;display:block;}
+    .hero-h1 strong{font-weight:700;display:block;}
+    .hero-desc{font-size:clamp(.85rem,2.2vw,1rem);color:rgba(253,250,245,.65);max-width:380px;line-height:1.75;margin-bottom:2.5rem;font-weight:300;animation:fadeSlide .9s .5s var(--ease) both;}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:.875rem;animation:fadeSlide .9s .65s var(--ease) both;}
+    .hero-badges{position:absolute;bottom:5.5rem;right:1.25rem;display:flex;flex-direction:column;gap:.5rem;z-index:1;animation:fadeSlide .9s .8s var(--ease) both;}
+    .badge-pill{display:flex;align-items:center;gap:.5rem;padding:.4rem .875rem;background:rgba(10,8,6,.7);border:1px solid rgba(201,168,76,.25);border-radius:100px;font-size:.72rem;color:var(--or-pale);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);letter-spacing:.04em;}
+    .badge-dot{width:6px;height:6px;border-radius:50%;background:var(--or);flex-shrink:0;}
+    @keyframes fadeSlide{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
+    .scroll-hint{position:absolute;bottom:1.5rem;left:50%;transform:translateX(-50%);z-index:1;display:flex;flex-direction:column;align-items:center;gap:.4rem;opacity:.45;animation:fadeSlide 1s 1.2s var(--ease) both;}
+    .scroll-hint span{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--or-pale);}
+    .scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,var(--or),transparent);animation:scrollPulse 2s ease-in-out infinite;}
+    @keyframes scrollPulse{0%,100%{opacity:.4;}50%{opacity:1;}}
+
+    /* MANIFESTE */
+    .manifeste{padding:5rem 0;background:var(--noir);position:relative;overflow:hidden;}
+    .manifeste::before{content:'RD';position:absolute;right:-.1em;top:50%;transform:translateY(-50%);font-family:var(--f1);font-size:clamp(10rem,30vw,22rem);font-weight:700;color:rgba(201,168,76,.04);line-height:1;pointer-events:none;user-select:none;}
+    .manifeste-inner{display:grid;grid-template-columns:1fr;gap:2.5rem;position:relative;}
+    .manifeste-left .label{margin-bottom:1.5rem;}
+    .manifeste-quote{font-family:var(--f1);font-size:clamp(1.6rem,5vw,2.8rem);font-weight:300;line-height:1.25;color:var(--blanc);letter-spacing:-.01em;}
+    .manifeste-quote em{color:var(--or);font-style:italic;font-weight:600;}
+    .manifeste-text{font-size:.9rem;line-height:1.85;color:rgba(253,250,245,.5);font-weight:300;margin-bottom:2rem;}
+    .manifeste-stats{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;border-top:1px solid rgba(201,168,76,.15);padding-top:1.75rem;}
+    .stat-num{font-family:var(--f1);font-size:2.8rem;font-weight:700;color:var(--or);line-height:1;letter-spacing:-.02em;}
+    .stat-label{font-size:.72rem;color:rgba(253,250,245,.4);letter-spacing:.08em;text-transform:uppercase;margin-top:.3rem;}
+
+    /* SERVICES */
+    .services{background:var(--creme2);padding:4.5rem 0;}
+    .services-header{display:flex;flex-direction:column;gap:.75rem;margin-bottom:3rem;}
+    .services-title{font-family:var(--f1);font-size:clamp(1.8rem,5vw,3rem);font-weight:600;color:var(--bordeaux);line-height:1.1;}
+    .service-row{display:flex;align-items:center;gap:1.5rem;padding:1.25rem 0;border-bottom:1px solid rgba(10,8,6,.08);transition:all .3s var(--ease);}
+    .service-row:first-child{border-top:1px solid rgba(10,8,6,.08);}
+    .service-row:hover .service-arrow{transform:translateX(4px);opacity:1;}
+    .service-index{font-family:var(--f1);font-size:.75rem;color:var(--or);letter-spacing:.12em;width:2rem;flex-shrink:0;}
+    .service-ico{width:44px;height:44px;border-radius:50%;background:var(--bordeaux);display:flex;align-items:center;justify-content:center;color:var(--or-pale);flex-shrink:0;}
+    .service-info{flex:1;}
+    .service-name{font-family:var(--f1);font-size:1.1rem;font-weight:600;color:var(--noir);margin-bottom:.15rem;}
+    .service-desc{font-size:.8rem;color:var(--gris);line-height:1.5;}
+    .service-arrow{color:var(--or);opacity:.3;transition:all .3s;flex-shrink:0;}
+    .service-halal-row{background:rgba(128,0,32,.05);padding:1.25rem .75rem;border-radius:4px;margin-top:.5rem;}
+
+    /* MENU */
+    .menu-sec{background:var(--noir-chaud, #141010);padding:5rem 0;}
+    .menu-header{margin-bottom:3rem;}
+    .menu-eyebrow{display:flex;align-items:center;gap:1rem;margin-bottom:1.25rem;}
+    .menu-eyebrow-line{flex:1;height:1px;background:rgba(201,168,76,.25);max-width:60px;}
+    .menu-title{font-family:var(--f1);font-size:clamp(2rem,7vw,5rem);font-weight:300;color:var(--blanc);line-height:1;letter-spacing:-.02em;}
+    .menu-title strong{font-weight:700;color:var(--or);}
+    .menu-nav{display:flex;gap:0;margin-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.08);overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+    .menu-nav::-webkit-scrollbar{display:none;}
+    .m-tab{flex-shrink:0;padding:.875rem 1.25rem;font-family:var(--f2);font-size:.78rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:rgba(253,250,245,.38);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;min-height:48px;transition:all .25s;}
+    .m-tab:hover{color:rgba(253,250,245,.7);}
+    .m-tab.active{color:var(--or);border-bottom-color:var(--or);}
+    .m-tab:focus-visible{outline:2px solid var(--or);outline-offset:-2px;}
+    .m-panel{display:none;}.m-panel.active{display:block;}
+    .menu-items{display:grid;grid-template-columns:1fr;gap:0;}
+    .menu-item{display:grid;grid-template-columns:1fr auto;align-items:start;gap:1rem;padding:1.5rem 0;border-bottom:1px solid rgba(255,255,255,.05);position:relative;}
+    .menu-item::after{content:'';position:absolute;left:0;right:0;bottom:-1px;height:1px;background:var(--or);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease);}
+    .menu-item:hover::after{transform:scaleX(1);}
+    .menu-item.star .m-name::after{content:'★';margin-left:.5rem;color:var(--or);font-size:.7em;}
+    .m-name{font-family:var(--f1);font-size:1.2rem;font-weight:600;color:var(--blanc);margin-bottom:.3rem;line-height:1.25;}
+    .m-desc{font-size:.8rem;color:rgba(253,250,245,.4);line-height:1.6;font-weight:300;}
+    .m-price{font-family:var(--f1);font-size:1rem;font-weight:600;color:var(--or);white-space:nowrap;padding-top:.2rem;}
+    .menu-footer{display:flex;justify-content:center;padding-top:3rem;border-top:1px solid rgba(255,255,255,.06);margin-top:.5rem;}
+
+    /* GALERIE */
+    .galerie{background:var(--creme);padding:5rem 0;}
+    .galerie-head{margin-bottom:2.5rem;}
+    .galerie-title{font-family:var(--f1);font-size:clamp(1.8rem,5.5vw,3.5rem);font-weight:300;color:var(--bordeaux);line-height:1.1;}
+    .galerie-title em{font-style:italic;font-weight:600;}
+    .mosaic{display:grid;grid-template-columns:1fr 1fr;gap:.375rem;}
+    .m-cell{overflow:hidden;position:relative;}
+    .m-cell img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease);}
+    .m-cell:hover img{transform:scale(1.05);}
+    .m-cell:nth-child(1){aspect-ratio:1;grid-column:1;grid-row:1;}
+    .m-cell:nth-child(2){aspect-ratio:1/2;grid-column:2;grid-row:1/3;}
+    .m-cell:nth-child(3){aspect-ratio:4/3;grid-column:1;grid-row:2;}
+    .m-cell:nth-child(4){aspect-ratio:3/2;grid-column:1/3;grid-row:3;}
+    .m-cell:nth-child(5){aspect-ratio:4/3;grid-column:1;grid-row:4;}
+    .m-cell:nth-child(6){aspect-ratio:4/3;grid-column:2;grid-row:4;}
+    .m-caption{position:absolute;bottom:0;left:0;right:0;padding:1rem;background:linear-gradient(to top,rgba(10,8,6,.75),transparent);opacity:0;transition:opacity .3s;}
+    .m-cell:hover .m-caption{opacity:1;}
+    .m-caption span{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--or-pale);}
+
+    /* CONTACT */
+    .contact{background:var(--noir);padding:5rem 0;}
+    .contact-inner{display:grid;grid-template-columns:1fr;gap:3rem;}
+    .contact-label{margin-bottom:1.25rem;}
+    .contact-title{font-family:var(--f1);font-size:clamp(2rem,6vw,4rem);font-weight:300;color:var(--blanc);line-height:1.1;margin-bottom:2rem;}
+    .contact-title em{color:var(--or);font-style:italic;font-weight:600;display:block;}
+    .info-block{display:flex;flex-direction:column;gap:1.25rem;margin-bottom:2.5rem;}
+    .info-row{display:flex;align-items:flex-start;gap:1rem;}
+    .info-icon{width:36px;height:36px;border:1px solid rgba(201,168,76,.3);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--or);flex-shrink:0;}
+    .info-text-label{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(253,250,245,.35);margin-bottom:.15rem;}
+    .info-text-val{font-size:.9rem;color:var(--blanc);font-weight:300;}
+    .contact-btns{display:flex;flex-direction:column;gap:.75rem;}
+    .contact-btns .btn{width:100%;justify-content:center;}
+    .map-frame{border-radius:2px;overflow:hidden;border:1px solid rgba(201,168,76,.15);}
+    .map-frame iframe{display:block;width:100%;height:260px;border:none;filter:grayscale(30%) sepia(10%);}
+
+    /* FOOTER */
+    .footer{background:var(--noir);border-top:1px solid rgba(201,168,76,.12);padding:2rem 0;}
+    .footer-inner{display:flex;flex-direction:column;align-items:center;gap:.75rem;text-align:center;}
+    .footer-brand{font-family:var(--f1);font-size:1.2rem;font-weight:300;color:rgba(253,250,245,.5);letter-spacing:.08em;}
+    .footer-brand em{color:var(--or);font-style:italic;font-weight:600;}
+    .footer-copy{font-size:.72rem;color:rgba(253,250,245,.25);letter-spacing:.06em;}
+    .footer-halal{font-size:.72rem;color:#4CAF50;letter-spacing:.08em;}
+
+    /* CTA BAR */
+    .cta-bar{position:fixed;bottom:0;left:0;right:0;z-index:400;display:flex;gap:.5rem;padding:.75rem 1rem calc(.75rem + env(safe-area-inset-bottom,0px));background:rgba(10,8,6,.97);border-top:1px solid rgba(201,168,76,.15);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transition:opacity .3s,transform .3s;}
+    .cta-bar.hidden{opacity:0;transform:translateY(100%);pointer-events:none;}
+    .cta-call{display:flex;align-items:center;justify-content:center;gap:.5rem;min-height:52px;padding:0 1.25rem;border-radius:2px;background:transparent;border:1px solid rgba(201,168,76,.4);color:var(--or-pale);font-family:var(--f2);font-size:.82rem;font-weight:500;letter-spacing:.06em;white-space:nowrap;transition:all .25s;}
+    .cta-call:hover{border-color:var(--or);color:var(--or);}
+    .cta-wa{flex:1;display:flex;align-items:center;justify-content:center;gap:.5rem;min-height:52px;border-radius:2px;background:var(--bordeaux);color:var(--or-pale);font-family:var(--f2);font-size:.85rem;font-weight:500;letter-spacing:.06em;border:1px solid var(--bordeaux);transition:all .25s;}
+    .cta-wa:hover{background:var(--bordeaux2);}
+    .cta-bar a:focus-visible{outline:2px solid var(--or);outline-offset:3px;}
+    body{padding-bottom:80px;}
+
+    /* REVEAL */
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s var(--ease),transform .7s var(--ease);}
+    .reveal.visible{opacity:1;transform:translateY(0);}
+
+    :focus-visible{outline:2px solid var(--or);outline-offset:3px;border-radius:2px;}
+
+    @media(min-width:768px){
+      .manifeste-inner{grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
+      .menu-items{grid-template-columns:1fr 1fr;gap:0 3rem;}
+      .menu-item{grid-column:span 1;}
+      .menu-item.wide{grid-column:1/-1;}
+      .contact-inner{grid-template-columns:1fr 1fr;align-items:start;gap:4rem;}
+      .contact-btns{flex-direction:row;}
+      .contact-btns .btn{width:auto;}
+    }
+    @media(min-width:1024px){
+      .nav-links{display:flex;}
+      .cta-bar{display:none;}
+      body{padding-bottom:0;}
+      .mosaic{grid-template-columns:repeat(3,1fr);}
+      .m-cell:nth-child(1){grid-column:1;grid-row:1;}
+      .m-cell:nth-child(2){grid-column:2;grid-row:1/3;aspect-ratio:2/3;}
+      .m-cell:nth-child(3){grid-column:3;grid-row:1;aspect-ratio:4/3;}
+      .m-cell:nth-child(4){grid-column:1;grid-row:2;aspect-ratio:4/3;}
+      .m-cell:nth-child(5){grid-column:3;grid-row:2;aspect-ratio:4/3;}
+      .m-cell:nth-child(6){grid-column:1/4;grid-row:3;aspect-ratio:21/6;}
+      .map-frame iframe{height:340px;}
+    }
+    @media(prefers-reduced-motion:reduce){
+      *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;}
+      html{scroll-behavior:auto;}
+      .reveal{opacity:1;transform:none;}
+    }
+  </style>
+</head>
+<body>
+
+<header class="header" id="site-header" role="banner">
+  <div class="header-inner">
+    <a href="#hero" class="logo-mark" aria-label="Restaurant Dakar – Accueil">
+      <span class="logo-r">Restaurant</span>
+      <span class="logo-d">Dakar</span>
+    </a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="#services">Services</a>
+      <a href="#menu">Menu</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="https://wa.me/221774617031?text=Bonjour%20Restaurant%20Dakar%2C%20je%20souhaite%20r%C3%A9server%20une%20table%20ou%20commander%20un%20repas." class="btn btn-wa" target="_blank" rel="noopener noreferrer" aria-label="Réserver via WhatsApp" id="header-cta" style="display:none">
+      <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.854L.054 23.8a.5.5 0 0 0 .608.632l6.083-1.596A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.886 0-3.653-.52-5.165-1.426l-.371-.221-3.852 1.011 1.029-3.758-.242-.386A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      Réserver
+    </a>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="hero" class="hero" aria-label="Section principale – Restaurant Dakar">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&q=80&auto=format&fit=crop" alt="Table gastronomique dressée avec élégance dans un restaurant haut de gamme" width="1400" height="933" fetchpriority="high"/>
+      <div class="hero-veil" aria-hidden="true"></div>
+    </div>
+    <div class="hero-body">
+      <div class="hero-tag" aria-hidden="true">
+        <span class="hero-num">Mermoz-Sacré-Cœur &middot; Dakar</span>
+      </div>
+      <h1 class="hero-h1">
+        <em>L'Art</em>
+        <strong>de la Table</strong>
+        Sénégalaise
+      </h1>
+      <p class="hero-desc">Une cuisine du terroir élevée au rang de gastronomie. Saveurs profondes, dressage précis, service d'exception.</p>
+      <div class="hero-actions">
+        <a href="https://wa.me/221774617031?text=Bonjour%20Restaurant%20Dakar%2C%20je%20souhaite%20r%C3%A9server%20une%20table%20ou%20commander%20un%20repas." class="btn btn-wa" target="_blank" rel="noopener noreferrer" aria-label="Réserver une table via WhatsApp">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.854L.054 23.8a.5.5 0 0 0 .608.632l6.083-1.596A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.886 0-3.653-.52-5.165-1.426l-.371-.221-3.852 1.011 1.029-3.758-.242-.386A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Réserver ma table
+        </a>
+        <a href="#menu" class="btn btn-ghost" aria-label="Voir le menu">Découvrir le menu</a>
+      </div>
+    </div>
+    <!--<div class="hero-badges" aria-hidden="true">
+      <div class="badge-pill"><span class="badge-dot"></span> 100% Halal certifié</div>
+      <div class="badge-pill"><span class="badge-dot"></span> Ouvert 7j/7</div>
+      <div class="badge-pill"><span class="badge-dot"></span> Parking gratuit</div>
+    </div>-->
+    <div class="scroll-hint" aria-hidden="true">
+      <span>Défiler</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MANIFESTE -->
+  <section class="manifeste" aria-labelledby="manifeste-title">
+    <div class="wrap">
+      <div class="manifeste-inner">
+        <div class="manifeste-left reveal">
+          <span class="label">Notre philosophie</span>
+          <h2 id="manifeste-title" class="manifeste-quote">Là où la tradition rencontre <em>l'excellence</em></h2>
+        </div>
+        <div class="manifeste-right reveal" style="transition-delay:.15s">
+          <p class="manifeste-text">Restaurant Dakar est né d'une conviction : la cuisine sénégalaise mérite sa place parmi les grandes tables du monde. Nos chefs réinterprètent chaque recette du terroir avec une exigence absolue — sans jamais trahir l'âme des saveurs qui nous ont construits.</p>
+          <p class="manifeste-text">Chaque plat est une déclaration. Chaque service, une cérémonie.</p>
+          <div class="manifeste-stats">
+            <div><div class="stat-num">7</div><div class="stat-label">Jours / Semaine</div></div>
+            <div><div class="stat-num">12h</div><div class="stat-label">De service quotidien</div></div>
+            <div><div class="stat-num">100%</div><div class="stat-label">Halal certifié</div></div>
+            <div><div class="stat-num">★4.9</div><div class="stat-label">Note clients</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="services-header reveal">
+        <span class="label" style="color:var(--bordeaux)">Ce que nous offrons</span>
+        <h2 id="services-title" class="services-title">Nos <em style="font-style:italic">Services</em></h2>
+      </div>
+      <ul role="list">
+        <li class="service-row reveal" style="transition-delay:.05s">
+          <span class="service-index">01</span>
+          <div class="service-ico" aria-hidden="true"><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5V19a1 1 0 001 1h16a1 1 0 001-1v-5.5"/><path stroke-linecap="round" d="M12 3v10m0 0l-3-3m3 3l3-3"/></svg></div>
+          <div class="service-info"><h3 class="service-name">Déjeuner &amp; Dîner sur Place</h3><p class="service-desc">Salle climatisée, décor raffiné, tables dressées avec soin pour une expérience inoubliable</p></div>
+          <svg class="service-arrow" aria-hidden="true" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </li>
+        <li class="service-row reveal" style="transition-delay:.1s">
+          <span class="service-index">02</span>
+          <div class="service-ico" aria-hidden="true"><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zm10 0a2 2 0 11-4 0 2 2 0 014 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10l2 0m8 0H5m8 0h2m0 0h2a1 1 0 001-1v-5l-5-5H13"/></svg></div>
+          <div class="service-info"><h3 class="service-name">Livraison à Domicile</h3><p class="service-desc">Livraison rapide sur Mermoz, Sacré-Cœur, Fann Résidence et environs proches</p></div>
+          <svg class="service-arrow" aria-hidden="true" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </li>
+        <li class="service-row reveal" style="transition-delay:.15s">
+          <span class="service-index">03</span>
+          <div class="service-ico" aria-hidden="true"><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="10" rx="2"/><path stroke-linecap="round" d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+          <div class="service-info"><h3 class="service-name">Parking Sécurisé &amp; Gratuit</h3><p class="service-desc">Accès direct depuis la voie principale, gardiennage assuré</p></div>
+          <svg class="service-arrow" aria-hidden="true" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </li>
+        <li class="service-row reveal" style="transition-delay:.2s">
+          <span class="service-index">04</span>
+          <div class="service-ico" aria-hidden="true"><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12 20.25h.008v.008H12v-.008z"/></svg></div>
+          <div class="service-info"><h3 class="service-name">Wi-Fi Haut Débit Offert</h3><p class="service-desc">Connexion fibre optique disponible pour tous nos hôtes</p></div>
+          <svg class="service-arrow" aria-hidden="true" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </li>
+        <li class="service-row service-halal-row reveal" style="transition-delay:.25s">
+          <span class="service-index" style="color:var(--bordeaux)">05</span>
+          <div class="service-ico" style="background:var(--creme);color:var(--bordeaux);border:1px solid var(--bordeaux)" aria-hidden="true"><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg></div>
+          <div class="service-info"><h3 class="service-name" style="color:var(--bordeaux)">100% Halal Certifié</h3><p class="service-desc" style="color:var(--gris)">Viandes et préparations certifiées, aucun compromis sur nos engagements religieux</p></div>
+          <svg class="service-arrow" aria-hidden="true" style="color:var(--bordeaux);opacity:.5" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="menu-sec" aria-labelledby="menu-title">
+    <div class="wrap">
+      <div class="menu-header reveal">
+        <div class="menu-eyebrow">
+          <div class="menu-eyebrow-line" aria-hidden="true"></div>
+          <span class="label">Notre carte</span>
+        </div>
+        <h2 id="menu-title" class="menu-title">La <strong>Carte</strong></h2>
+      </div>
+      <div class="menu-nav" role="tablist" aria-label="Sections du menu">
+        <button class="m-tab active" role="tab" aria-selected="true" aria-controls="p-entrees" id="t-entrees">Entrées</button>
+        <button class="m-tab" role="tab" aria-selected="false" aria-controls="p-plats" id="t-plats" tabindex="-1">Plats</button>
+        <button class="m-tab" role="tab" aria-selected="false" aria-controls="p-desserts" id="t-desserts" tabindex="-1">Desserts</button>
+        <button class="m-tab" role="tab" aria-selected="false" aria-controls="p-boissons" id="t-boissons" tabindex="-1">Boissons</button>
+      </div>
+      <div class="m-panel active" role="tabpanel" id="p-entrees" aria-labelledby="t-entrees">
+        <div class="menu-items">
+          <article class="menu-item"><div><h3 class="m-name">Salade Dakaroise</h3><p class="m-desc">Avocat frais, crevettes grillées au beurre citronné, mangue verte, vinaigrette aux agrumes et piment doux</p></div><span class="m-price">3 500 F</span></article>
+          <article class="menu-item"><div><h3 class="m-name">Accras de Thiof</h3><p class="m-desc">Beignets aériens au poisson capitaine, sauce tartare maison, citron vert</p></div><span class="m-price">4 000 F</span></article>
+          <article class="menu-item"><div><h3 class="m-name">Soupe Kandia</h3><p class="m-desc">Bouillon onctueux de gombos, crevettes séchées, huile de palme et épices du marché</p></div><span class="m-price">3 000 F</span></article>
+          <article class="menu-item"><div><h3 class="m-name">Nem Sénégalais</h3><p class="m-desc">Rouleaux croustillants au bœuf haché, légumes du terroir, sauce arachide pimentée</p></div><span class="m-price">3 500 F</span></article>
+        </div>
+      </div>
+      <div class="m-panel" role="tabpanel" id="p-plats" aria-labelledby="t-plats" hidden>
+        <div class="menu-items">
+          <article class="menu-item star wide"><div><h3 class="m-name">Thiéboudienne Royal</h3><p class="m-desc">Notre plat signature. Riz au poisson braisé, légumes du marché, tamarin, sauce tomate concentrée, capitaine entier rôti</p></div><span class="m-price">8 500 F</span></article>
+          <article class="menu-item"><div><h3 class="m-name">Yassa Poulet Fermier</h3><p class="m-desc">Poulet mariné 24h, oignons confits au citron vert, moutarde, riz basmati parfumé</p></div><span class="m-price">7 500 F</span></article>
+          <article class="menu-item"><div><h3 class="m-name">Mafé Bœuf Premium</h3><p class="m-desc">Bœuf mijoté lentement, sauce arachide torréfiée, légumes fondants, couscous sénégalais</p></div><span class="m-price">9 000 F</span></article>
+          <article class="menu-item"><div><h3 class="m-name">Thiof à la Dakaroise</h3><p class="m-desc">Capitaine entier, chermoula d'herbes fraîches, frites de manioc croustillantes</p></div><span class="m-price">12 000 F</span></article>
+          <article class="menu-item"><div><h3 class="m-name">Ceebu Yapp</h3><p class="m-desc">Riz à la viande de mouton, légumes fondants, bouillon réduit aux épices du terroir</p></div><span class="m-price">8 000 F</span></article>
+          <article class="menu-item"><div><h3 class="m-name">Poulet DG Dakar</h3><p class="m-desc">Plantain mûr rôti, poulet aux épices africaines, légumes sautés à l'ail et gingembre</p></div><span class="m-price">9 500 F</span></article>
+        </div>
+      </div>
+      <div class="m-panel" role="tabpanel" id="p-desserts" aria-labelledby="t-desserts" hidden>
+        <div class="menu-items">
+          <article class="menu-item"><div><h3 class="m-name">Thiakry Maison</h3><p class="m-desc">Semoule fine au lait de coco, yaourt sucré, raisins secs et noix de cajou grillées</p></div><span class="m-price">2 500 F</span></article>
+          <article class="menu-item star"><div><h3 class="m-name">Fondant Bissap</h3><p class="m-desc">Cœur coulant chocolat noir, coulis d'hibiscus, glace vanille bourbon artisanale</p></div><span class="m-price">3 500 F</span></article>
+          <article class="menu-item"><div><h3 class="m-name">Mangue Rôtie &amp; Caramel</h3><p class="m-desc">Mangue Kent au four, caramel de tamarin, zeste de citron vert, amandes effilées</p></div><span class="m-price">3 000 F</span></article>
+          <article class="menu-item"><div><h3 class="m-name">Crème Coco &amp; Gingembre</h3><p class="m-desc">Panna cotta au lait de coco, gelée de gingembre frais, ananas confit</p></div><span class="m-price">2 800 F</span></article>
+        </div>
+      </div>
+      <div class="m-panel" role="tabpanel" id="p-boissons" aria-labelledby="t-boissons" hidden>
+        <div class="menu-items">
+          <article class="menu-item star"><div><h3 class="m-name">Bissap Maison</h3><p class="m-desc">Infusion d'hibiscus séché, menthe fraîche, sucre de canne, glaçons, citron vert</p></div><span class="m-price">1 500 F</span></article>
+          <article class="menu-item"><div><h3 class="m-name">Bouye Premium</h3><p class="m-desc">Nectar de pain de singe, lait entier, vanille naturelle de Madagascar</p></div><span class="m-price">1 500 F</span></article>
+          <article class="menu-item"><div><h3 class="m-name">Jus de Ditakh</h3><p class="m-desc">Fruit exotique du Sénégal, légèrement acidulé, riche en vitamine C</p></div><span class="m-price">1 800 F</span></article>
+          <article class="menu-item"><div><h3 class="m-name">Eau Minérale</h3><p class="m-desc">Kirène ou Evian, plate ou gazeuse, servie fraîche</p></div><span class="m-price">800 F</span></article>
+        </div>
+      </div>
+      <div class="menu-footer reveal">
+        <a href="https://wa.me/221774617031?text=Bonjour%20Restaurant%20Dakar%2C%20je%20souhaite%20r%C3%A9server%20une%20table%20ou%20commander%20un%20repas." class="btn btn-dark" target="_blank" rel="noopener noreferrer" aria-label="Commander via WhatsApp">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.854L.054 23.8a.5.5 0 0 0 .608.632l6.083-1.596A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.886 0-3.653-.52-5.165-1.426l-.371-.221-3.852 1.011 1.029-3.758-.242-.386A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Commander via WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIE -->
+  <section id="galerie" class="galerie" aria-labelledby="galerie-title">
+    <div class="wrap">
+      <div class="galerie-head reveal">
+        <span class="label" style="color:var(--bordeaux)">Nos instants</span>
+        <h2 id="galerie-title" class="galerie-title">L'ambiance<br><em>Restaurant Dakar</em></h2>
+      </div>
+    </div>
+    <div class="mosaic" role="list" aria-label="Galerie photos Restaurant Dakar">
+      <figure class="m-cell" role="listitem"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=70&auto=format&fit=crop" alt="Plat gastronomique sénégalais dressé – Restaurant Dakar" width="700" height="700" loading="lazy"/><figcaption class="m-caption"><span>Nos plats</span></figcaption></figure>
+      <figure class="m-cell" role="listitem"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=700&q=70&auto=format&fit=crop" alt="Salle élégante du restaurant – ambiance chic Dakar" width="700" height="1050" loading="lazy"/><figcaption class="m-caption"><span>Notre salle</span></figcaption></figure>
+      <figure class="m-cell" role="listitem"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=700&q=70&auto=format&fit=crop" alt="Thiéboudienne royal – spécialité Restaurant Dakar" width="700" height="525" loading="lazy"/><figcaption class="m-caption"><span>Thiéboudienne Royal</span></figcaption></figure>
+      <figure class="m-cell" role="listitem"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=700&q=70&auto=format&fit=crop" alt="Dîner romantique en soirée – Restaurant Dakar" width="700" height="467" loading="lazy"/><figcaption class="m-caption"><span>Soirées</span></figcaption></figure>
+      <figure class="m-cell" role="listitem"><img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=700&q=70&auto=format&fit=crop" alt="Chef en cuisine – Restaurant Dakar" width="700" height="525" loading="lazy"/><figcaption class="m-caption"><span>En cuisine</span></figcaption></figure>
+      <figure class="m-cell" role="listitem"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1400&q=70&auto=format&fit=crop" alt="Art du dressage cuisine africaine – Restaurant Dakar Sénégal" width="1400" height="400" loading="lazy"/><figcaption class="m-caption"><span>Art du dressage</span></figcaption></figure>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div class="contact-inner">
+        <div class="reveal">
+          <span class="contact-label label">Nous rendre visite</span>
+          <h2 id="contact-title" class="contact-title">Venez<br><em>nous trouver</em></h2>
+          <address class="info-block" aria-label="Coordonnées Restaurant Dakar">
+            <div class="info-row">
+              <div class="info-icon" aria-hidden="true"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg></div>
+              <div><div class="info-text-label">Adresse</div><div class="info-text-val">Mermoz-Sacré-Cœur, Dakar, Sénégal</div></div>
+            </div>
+            <div class="info-row">
+              <div class="info-icon" aria-hidden="true"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+              <div><div class="info-text-label">Horaires</div><div class="info-text-val">Tous les jours &middot; 11h00 – 23h00</div></div>
+            </div>
+            <div class="info-row">
+              <div class="info-icon" aria-hidden="true"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg></div>
+              <div><div class="info-text-label">Téléphone</div><div class="info-text-val">+221 77 461 70 31</div></div>
+            </div>
+          </address>
+          <div class="contact-btns">
+            <a href="tel:+221774617031" class="btn btn-ghost" aria-label="Appeler Restaurant Dakar">
+              <svg aria-hidden="true" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+              Appeler
+            </a>
+            <a href="https://wa.me/221774617031?text=Bonjour%20Restaurant%20Dakar%2C%20je%20souhaite%20r%C3%A9server%20une%20table%20ou%20commander%20un%20repas." class="btn btn-wa" target="_blank" rel="noopener noreferrer" aria-label="Réserver via WhatsApp">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.854L.054 23.8a.5.5 0 0 0 .608.632l6.083-1.596A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.886 0-3.653-.52-5.165-1.426l-.371-.221-3.852 1.011 1.029-3.758-.242-.386A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="map-frame reveal" style="transition-delay:.15s">
+          <iframe title="Localisation Restaurant Dakar – Mermoz-Sacré-Cœur Dakar" src="https://www.openstreetmap.org/export/embed.html?bbox=-17.485%2C14.710%2C-17.455%2C14.730&layer=mapnik&marker=14.720%2C-17.470" width="100%" loading="lazy" allowfullscreen="" aria-label="Carte OpenStreetMap – Restaurant Dakar à Mermoz-Sacré-Cœur" style="min-height:320px"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="wrap footer-inner">
+    <p class="footer-brand">Restaurant <em>Dakar</em></p>
+    <p class="footer-copy">&copy; <span id="yr"></span> Restaurant Dakar &middot; Mermoz-Sacré-Cœur &middot; Dakar, Sénégal</p>
+    <p class="footer-halal">&#10003; Certifié 100% Halal</p>
+  </div>
+</footer>
+
+<!-- CTA STICKY MOBILE -->
+<div class="cta-bar" id="cta-bar" role="region" aria-label="Actions rapides">
+  <a href="tel:+221774617031" class="cta-call" aria-label="Appeler Restaurant Dakar">
+    <svg aria-hidden="true" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+    Appeler
+  </a>
+  <a href="https://wa.me/221774617031?text=Bonjour%20Restaurant%20Dakar%2C%20je%20souhaite%20r%C3%A9server%20une%20table%20ou%20commander%20un%20repas." class="cta-wa" target="_blank" rel="noopener noreferrer" aria-label="Réserver via WhatsApp – Restaurant Dakar">
+    <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.854L.054 23.8a.5.5 0 0 0 .608.632l6.083-1.596A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.886 0-3.653-.52-5.165-1.426l-.371-.221-3.852 1.011 1.029-3.758-.242-.386A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+    Réserver via WhatsApp
+  </a>
+</div>
+
+<script>
+(function(){
+  'use strict';
+  var yr=document.getElementById('yr');
+  if(yr) yr.textContent=new Date().getFullYear();
+
+  var hdr=document.getElementById('site-header');
+  var hCta=document.getElementById('header-cta');
+  var lastY=0;
+  window.addEventListener('scroll',function(){
+    var y=window.scrollY;
+    if(hdr){
+      hdr.classList.toggle('scrolled',y>60);
+      if(y>200){
+        hdr.style.transform=y>lastY?'translateY(-100%)':'translateY(0)';
+        hdr.style.transition='transform .35s cubic-bezier(.16,1,.3,1)';
+        if(hCta) hCta.style.display=y>lastY?'none':'inline-flex';
+      } else { hdr.style.transform='translateY(0)'; }
+    }
+    lastY=y<0?0:y;
+  },{passive:true});
+
+  var ctaBar=document.getElementById('cta-bar');
+  var hero=document.querySelector('#hero');
+  if(ctaBar&&hero&&'IntersectionObserver' in window){
+    new IntersectionObserver(function(e){e.forEach(function(en){ctaBar.classList.toggle('hidden',en.isIntersecting);});},{threshold:.25}).observe(hero);
+  }
+
+  var tabs=document.querySelectorAll('.m-tab');
+  var panels=document.querySelectorAll('.m-panel');
+  panels.forEach(function(p,i){if(i!==0)p.hidden=true;});
+  function activate(tab){
+    tabs.forEach(function(t){t.classList.remove('active');t.setAttribute('aria-selected','false');t.setAttribute('tabindex','-1');});
+    panels.forEach(function(p){p.classList.remove('active');p.hidden=true;});
+    tab.classList.add('active');tab.setAttribute('aria-selected','true');tab.setAttribute('tabindex','0');
+    var p=document.getElementById(tab.getAttribute('aria-controls'));
+    if(p){p.classList.add('active');p.hidden=false;}
+  }
+  tabs.forEach(function(tab,idx){
+    tab.addEventListener('click',function(){activate(tab);});
+    tab.addEventListener('keydown',function(e){
+      var n;
+      if(e.key==='ArrowRight'){n=(idx+1)%tabs.length;tabs[n].focus();activate(tabs[n]);}
+      else if(e.key==='ArrowLeft'){n=(idx-1+tabs.length)%tabs.length;tabs[n].focus();activate(tabs[n]);}
+      else if(e.key==='Home'){tabs[0].focus();activate(tabs[0]);}
+      else if(e.key==='End'){tabs[tabs.length-1].focus();activate(tabs[tabs.length-1]);}
+    });
+  });
+
+  if('IntersectionObserver' in window){
+    var obs=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});
+    },{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el);});
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('visible');});
+  }
+})();
+</script>
+</body>
+</html>
