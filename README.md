@@ -28,3 +28,7 @@ codezen-test/
 ├── index.html         # Page principale du template
 ├── README.md          # Description et informations du projet
 └── .git/              # Répertoire Git pour le suivi des versions
+
+## 🖼️ Aperçu du template
+
+![Aperçu CodeZen](screenshot.png)
